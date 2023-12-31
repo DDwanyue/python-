@@ -16,11 +16,11 @@ print("|---7:退出通讯录程序---|")
 print("")
 #构建字典，存储联系人信息
 dict={'zhangsan':'13813593298','lisi':'13586366317','wangwu':'13813762582'}
-#列表元素
-d2=[{'name':'zhangsan','age':20,'tel'}]
+
 #定义各功能函数
 #查询所有联系人信息
 def queryAll():
+
     if dict=={}:
         print('通讯录无如何联系人信息')
     else:
@@ -33,6 +33,8 @@ def queryOne():
     name=input('请输入要查询的联系人姓名：')
     print(name + ":"+dict.get(name,'联系人不存在'))
     pass
+
+#更新联系人信息
 def update():
     name=input("请输入要修改的联系人姓名：")
     if(name in dict):
